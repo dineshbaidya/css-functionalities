@@ -1,0 +1,76 @@
+.first{
+height:380px;
+width:500px;
+}
+#firstPara {
+width: 50%;
+color: black;
+position: relative;
+animation-name: first;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+}
+@keyframes first {
+0% {left:0px; top:0px;}
+25%{left:200px; top:0px;}
+50%{left:200px; top:200px;}
+75%{left:0px; top:200px;}
+100%{left:0px; top:0px;}
+}
+#third{
+width:60%;
+margin-top:20px;
+}
+#second{
+height:200px;
+}
+.second{
+font-family: "arial";
+font-size: 1rem;
+}
+.secondPara{
+overflow: hidden;
+white-space: nowrap;
+width: 0;
+height:50px;
+animation: SecondParaAnimation;
+animation-duration: 5s;
+animation-timing-function: steps(100, end);
+animation-fill-mode: forwards;
+}  
+@keyframes SecondParaAnimation {
+from { width: 0 }
+to { width: 100% }
+}
+#third{ 
+position:fixed;
+width:50%;
+bottom:45%;
+display:block;
+top:500px;
+}
+#flip {
+height:50px;
+overflow:hidden;
+}
+#flip>div{
+color:black;
+padding:4px 12px;
+height:50px;
+margin-bottom:45px;
+display:inline-block;
+}
+#flip #firstDiv, #secondDiv{
+animation: show 3s linear infinite;
+}
+@keyframes show {
+0% {margin-top:10px;}
+20% {margin-top:-20px;}
+40% {margin-top:-40px;}
+60% {margin-top:-60px;}
+80% {margin-top:-80px;}
+100% {margin-top:-100px;}
+}
+
+
+
